@@ -10,15 +10,20 @@
     <!-- app -->
     <script src="app/contacts-app.module.js"></script>
     <script src="app/contacts-app.controller.js"></script>
+    <script src="app/contacts-app.filter.js"></script>
 
 </head>
 <body ng-app="contactsApp" ng-controller="homeCtrl">
 
     <pre>{{ contacts | json }}</pre>
 
+
+    Adkins Henson
+    <span ng-bind="[] | capitalize"></span>
+
     <ul>
         <li ng-repeat="contact in contacts | orderBy:'name'">
-            <span ng-bind="contact.name | uppercase"></span>
+            <span ng-bind="contact.name | capitalize"></span>
             <span ng-bind="contact.company"></span>
             <span ng-bind="contact.email"></span>
         </li>
