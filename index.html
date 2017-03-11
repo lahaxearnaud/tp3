@@ -21,7 +21,6 @@
     <span ng-bind="[] | capitalize"></span>
 
     <input type="text" ng-model="search" name="search">
-
     <ul>
         <li ng-repeat="contact in contacts | filter:search | orderBy:'name'">
             <span ng-bind="contact.name | capitalize"></span>
