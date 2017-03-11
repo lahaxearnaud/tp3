@@ -3,12 +3,12 @@ angular.module('contactsApp')
 
         $scope.contacts = [
             {
-                "name": "Jan Salinas",
+                "name": "Jan SalINAS",
                 "company": "EQUICOM",
                 "email": "jansalinas@equicom.com"
             },
             {
-                "name": "Lola Franks",
+                "name": "Lola FrANks",
                 "company": "ANOCHA",
                 "email": "lolafranks@anocha.com"
             },
