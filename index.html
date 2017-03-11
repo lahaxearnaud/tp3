@@ -17,7 +17,7 @@
     <pre>{{ contacts | json }}</pre>
 
     <ul>
-        <li ng-repeat="contact in contacts">
+        <li ng-repeat="contact in contacts | orderBy:'name'">
             <span ng-bind="contact.name"></span>
             <span ng-bind="contact.company"></span>
             <span ng-bind="contact.email"></span>
