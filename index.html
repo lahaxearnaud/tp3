@@ -13,6 +13,15 @@
 
 </head>
 <body ng-app="contactsApp" ng-controller="homeCtrl">
-    HELLO WORLD
+
+    <pre>{{ contacts | json }}</pre>
+
+    <ul>
+        <li ng-repeat="contact in contacts">
+            <span ng-bind="contact.name"></span>
+            <span ng-bind="contact.company"></span>
+            <span ng-bind="contact.email"></span>
+        </li>
+    </ul>
 </body>
 </html>
