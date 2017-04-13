@@ -11,9 +11,6 @@ angular.module('contactsApp')
             scope: {
                 'email': '=',
                 'name' : '='
-            },
-            link: function(scope) {
-                console.log('FROM MY DIRECTIVE', scope);
             }
         };
     });
